@@ -65,18 +65,13 @@ void FCFS(JCB *js, int n)
 		dqzzt = zztime / js[i].rtime;
 		avrdqzz += dqzzt;
 		cout << "完成时间：" << ftime << "周转时间：" << zztime << "带权周转时间：" << dqzzt;
-
 		cout << endl;
 	}
 	avrzz = avrzz / n;
 	avrdqzz = avrdqzz / n;
 	cout << "平均周转时间为：" << avrzz << endl;
 	cout << "平均带权周转时间为：" << avrdqzz << endl;
-
-
 }
-
-
 
 int main()
 {
@@ -97,8 +92,6 @@ int main()
 		cin >> (js + i)->rtime;
 	}
 	FCFS(js, num);
-
-
 	system("pause");
 	return 0;
 }
