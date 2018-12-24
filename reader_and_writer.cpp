@@ -6,7 +6,6 @@ using namespace std;
 HANDLE Rmutex = NULL;
 HANDLE Wmutex = NULL;
 int Rcount = 0;
-
 DWORD WINAPI ReadThread(LPVOID lpParamter)
 {
 	while (Rcount >= 0)
