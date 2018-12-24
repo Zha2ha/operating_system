@@ -8,7 +8,7 @@ class process
 {
 public:
 	//process() {}
-	process(string str, int sz) {
+	process(string str, int sz) {//构造函数，根据进程大小确定请求页面数
 		name = str; size = sz;
 		if (size % PAGESIZE == 0)
 			pageNum = size / PAGESIZE;
